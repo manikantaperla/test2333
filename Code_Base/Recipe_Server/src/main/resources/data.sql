@@ -1,0 +1,31 @@
+
+
+DROP TABLE IF EXISTS users; 
+DROP TABLE IF EXISTS recipes; 
+
+CREATE TABLE users (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  UNAME VARCHAR(50) NOT NULL,
+  PASSWORD VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE recipes (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+   RECPNAME VARCHAR(100) NOT NULL,
+   RECPIND VARCHAR(10) NOT NULL,
+   RECPCOUNT VARCHAR(100) NOT NULL,
+   RECPPREPA VARCHAR(10000) NOT NULL,
+   RECPING VARCHAR(10000) NOT NULL,
+   RECPDATETIME VARCHAR(100) NOT NULL
+);
+
+
+insert into users values('1','test','test@123');
+insert into users values('2','test2','test11@123');
+
+insert into recipes values('1','Test','Yes','2','Tst','WW','22/12/1990');
+
+
+
+
+
